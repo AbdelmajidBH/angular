@@ -4,24 +4,31 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { BikeComponent } from './bike/bike.component';
 import { BikeInfoComponent } from './bike-info/bike-info.component';
 import { BikesComponent } from './bikes/bikes.component';
+import { BikeService } from './bike.service';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { MatList, MatListItem } from '@angular/material';
+import { MaterialModule} from './MaterialModule';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BikeComponent,
-    BikeInfoComponent,
-    BikesComponent,
-  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    MaterialModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    BikesComponent,
+    BikeInfoComponent,
+  ],
+  bootstrap: [AppComponent],
+  providers: [BikeService],
 })
 export class AppModule { }
