@@ -19,7 +19,7 @@ export class AppComponent {
   title = 'Bikes Showroom';
   bikes = BIKES;
   selectedBike: Bike;
-  onSelect(bike: Bike): void {   
+  onSelect(bike: Bike): void {
     this.selectedBike = bike;
   }
 }

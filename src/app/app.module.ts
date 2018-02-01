@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { BikeComponent } from './bike/bike.component';
 import { BikeInfoComponent } from './bike-info/bike-info.component';
+import { BikesComponent } from './bikes/bikes.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { BikeInfoComponent } from './bike-info/bike-info.component';
     AppComponent,
     BikeComponent,
     BikeInfoComponent,
+    BikesComponent,
   ],
   imports: [
     BrowserModule,
